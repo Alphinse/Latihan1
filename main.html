@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cards-container">
+        <!-- Card example -->
+        <div class="card" data-id="1" data-name="Barang 1" data-price="100000" data-img="img1.jpg">
+            <img src="img1.jpg" alt="Barang 1">
+            <h2>Barang 1</h2>
+            <p>Harga: Rp100.000</p>
+            <button class="buy-btn">Beli</button>
+        </div>
+        <div class="card" data-id="2" data-name="Barang 2" data-price="200000" data-img="img2.jpg">
+            <img src="img2.jpg" alt="Barang 2">
+            <h2>Barang 2</h2>
+            <p>Harga: Rp200.000</p>
+            <button class="buy-btn">Beli</button>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <div id="payment-form" style="display: none;">
+        <h2>Form Pembayaran</h2>
+        <img id="form-img" src="" alt="">
+        <p id="form-name"></p>
+        <p id="form-price"></p>
+        <form>
+            <label for="buyer-name">Nama Pembeli:</label>
+            <input type="text" id="buyer-name" name="buyer-name" required>
+            <label for="buyer-phone">Nomor Telepon:</label>
+            <input type="tel" id="buyer-phone" name="buyer-phone" required>
+            <label for="buyer-email">Email:</label>
+            <input type="email" id="buyer-email" name="buyer-email" required>
+            <label for="buyer-address">Alamat:</label>
+            <input type="text" id="buyer-address" name="buyer-address" required>
+            <button type="submit">Bayar</button>
+            <button type="button" id="back-btn">Kembali</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

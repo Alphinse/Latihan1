@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.login-container, .register-container, #cards-container, #payment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-container, .register-container {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-top: 100px;
+}
+
+.login-container form, .register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input, .register-container input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login-container button, .register-container button {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.message {
+    color: red;
+    margin-top: 10px;
+}
+
+#cards-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#payment-form img {
+    width: 100%;
+    height: auto;
+}
+
+#payment-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#payment-form label {
+    margin-top: 10px;
+}
+
+#payment-form input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#payment-form button {
+    margin-top: 15px;
+    padding: 10px;
+}
